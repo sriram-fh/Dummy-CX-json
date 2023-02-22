@@ -1,6 +1,6 @@
 [
     {
-        "message": "Success",
+        "message": "success",
         "data": {
             "root": {
                 "action_type": "UI_DISPLAY",
