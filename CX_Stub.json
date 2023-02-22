@@ -1,0 +1,128 @@
+[
+    {
+        "message": "Success",
+        "data": {
+            "root": {
+                "action_type": "UI_DISPLAY",
+                "action_value": "SINGLE",
+                "childrens": [
+                    {
+                        "id": 1,
+                        "question": "My order has been delivered"
+                    },
+                    {
+                        "id": 2,
+                        "question": "My order has not been delivered"
+                    }
+                ]
+            },
+            "questions": {
+                "1": {
+                    "id": 1,
+                    "question": "My order has been delivered",
+                    "action_type": "UI_DISPLAY",
+                    "action_value": "SINGLE",
+                    "childrens": [
+                        {
+                            "id": 3,
+                            "question": "Issue with food"
+                        },
+                        {
+                            "id": 4,
+                            "question": "Missing items"
+                        },
+                        {
+                            "id": 5,
+                            "question": "Wrong items"
+                        }
+                    ]
+                },
+                "2": {
+                    "id": 2,
+                    "question": "My order has not been delivered",
+                    "action_type": "UI_DISPLAY",
+                    "action_value": "SINGLE",
+                    "childrens": [
+                        {
+                            "id": 8,
+                            "question": "Where is my order"
+                        },
+                        {
+                            "id": 9,
+                            "question": "Cancel my order"
+                        },
+                        {
+                            "id": 10,
+                            "question": "Other"
+                        }
+                    ]
+                },
+                "3": {
+                    "id": 3,
+                    "question": "Issue with food",
+                    "action_type": "UI_DISPLAY",
+                    "action_value": "SINGLE",
+                    "childrens": [
+                        {
+                            "id": 6,
+                            "question": "Poor quality"
+                        },
+                        {
+                            "id": 7,
+                            "question": "Cold on delivery"
+                        }
+                    ]
+                },
+                "4": {
+                    "id": 4,
+                    "question": "Missing items",
+                    "action_type": "UI_ACTION",
+                    "action_value": "FETCH_ITEMS",
+                    "childrens": []
+                },
+                "5": {
+                    "id": 5,
+                    "question": "Wrong items",
+                    "action_type": "UI_ACTION",
+                    "action_value": "FETCH_ITEMS_IMG_UPLOAD",
+                    "childrens": []
+                },
+                "6": {
+                    "id": 6,
+                    "question": "Poor quality",
+                    "action_type": "UI_ACTION",
+                    "action_value": "FETCH_ITEMS_IMG_UPLOAD",
+                    "childrens": []
+                },
+                "7": {
+                    "id": 7,
+                    "question": "Cold on delivery",
+                    "action_type": "UI_ACTION",
+                    "action_value": "FETCH_ITEMS",
+                    "childrens": []
+                },
+                "8": {
+                    "id": 8,
+                    "question": "Where is my order",
+                    "action_type": "UI_ACTION",
+                    "action_value": "TRACK_ORDER",
+                    "childrens": []
+                },
+                "9": {
+                    "id": 9,
+                    "question": "Cancel my order",
+                    "action_type": "UI_ACTION",
+                    "action_value": "CANCEL_ORDER",
+                    "childrens": []
+                },
+                "10": {
+                    "id": 10,
+                    "question": "Other",
+                    "action_type": "UI_ACTION",
+                    "action_value": "CHAT_BOT",
+                    "childrens": []
+                }
+            }
+        }
+    }
+]
